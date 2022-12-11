@@ -1,0 +1,99 @@
+/* CSS Document */
+
+.title {
+	font-size: 150%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 14px; /* h1 default */
+	margin-bottom: 14px;
+	padding-top: 40px;
+	padding-bottom: 5px;
+	line-height: 1.5em;
+}
+
+.sub_title {
+	font-size: 150%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 14px; /* h1 default */
+	margin-bottom: 6px;
+	padding-top: 10px;
+	padding-bottom: 2px;
+	line-height: 1.5em;
+}
+
+.sub_sub_title {
+	font-size: 125%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 14px; /* h1 default */
+	margin-bottom: 6px;
+	padding-top: 10px;
+	padding-bottom: 2px;
+	line-height: 1.5em;
+}
+
+.text{
+    font-size: 100%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 5px; /* h1 default */
+	margin-bottom: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 1.5em; 
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+}
+
+.fig{
+    font-size: 85%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 5px; /* h1 default */
+	margin-bottom: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 1.5em; 
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+}
+
+
+p.author {
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 3em 0 3em;
+}
+
+.author {
+	margin: 0pt 10pt;
+}
+
+.institute {
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 1em 3em 1em 3em;
+}
+
+.icons{
+    text-align: center;
+}
+
+.img-fluid{
+    max-width: 10%;
+    height: auto;
+}
+
+#center_img {  
+    text-align: center;
+    }
