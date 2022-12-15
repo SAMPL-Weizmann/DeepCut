@@ -66,6 +66,20 @@
     text-align: justify;
 }
 
+.ak{
+    font-size: 125%;
+	font-weight: 800;
+	display: block;
+	text-align: center;
+	margin-top: 5px; /* h1 default */
+	margin-bottom: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 1.5em;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+}
 
 p.author {
     font-size: 13pt;
