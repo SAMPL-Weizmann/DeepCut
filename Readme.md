@@ -4,7 +4,8 @@
 <div align="center">
 
 [<img alt="arXiv" height="40" src="https://img.shields.io/badge/arXiv-2212.05853-b31b1b.svg?style=flat" width="200"/>](https://arxiv.org/abs/2212.05853)
-[<img alt="Project" height="37.5" src="https://img.shields.io/badge/-PROJECT%20PAGE-0088CC" width="200"/>](https://sampl-weizmann.github.io/DeepCut/)
+[<img alt="Project" height="40" src="https://img.shields.io/badge/-PROJECT%20PAGE-0088CC" width="200"/>](https://sampl-weizmann.github.io/DeepCut/)
+[<img alt="License: MIT" height="40" src="https://img.shields.io/badge/License-MIT-yellow.svg" width="200"/>](https://opensource.org/licenses/MIT)
 </div>
 
 ![](images/figs/arch.jpeg)
