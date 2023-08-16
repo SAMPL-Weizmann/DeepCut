@@ -30,7 +30,7 @@
     </div>
 
     <p class="icons">
-      <button onclick="location.href='https://github.com/amitt1236/Deep_Cut'" type="button" class="btn btn-outline-danger">
+      <button onclick="location.href='https://github.com/SAMPL-Weizmann/DeepCut'" type="button" class="btn btn-outline-danger">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
       </svg>
@@ -62,17 +62,12 @@
     
     <p class="sub_title">Abstract</p>
     
-    <p class="text">Image segmentation is a fundamental task in computer vision.
+    <p class="text">
+      Image segmentation is a fundamental task in computer vision.
       Data annotation for training supervised methods can be labor-intensive, motivating unsupervised methods.
-      Some existing approaches extract deep features from pre-trained networks and build a graph to apply classical clustering methods (e.g., k-means and normalized-cuts) as a post-processing stage. 
-      These techniques reduce the high-dimensional information encoded in the features to pair-wise scalar affinities.
-      In this work, we replace classical clustering algorithms with a lightweight Graph Neural Network (GNN) 
-      trained to achieve the same clustering objective function.
-      However, in contrast to existing approaches, we feed the GNN not only the pair-wise affinities between local image features but also the raw features themselves.
-      Maintaining this connection between the raw feature and the clustering goal allows to perform part semantic segmentation implicitly, without requiring additional post-processing steps.
-      We demonstrate how classical clustering objectives can be formulated as self-supervised loss functions for training our image segmentation GNN.
-      Additionally, we use the Correlation-Clustering (CC) objective
-      to perform clustering without defining the number of clusters (k-less clustering).
+      Current approaches often rely on extracting deep features from pre-trained networks to construct a graph, and classical clustering methods like k-means and normalized-cuts are then applied as a post-processing step. However, this approach reduces the high-dimensional information encoded in the features to pair-wise scalar affinities.
+      To address this limitation, this study introduces a lightweight Graph Neural Network (GNN) to replace classical clustering methods while optimizing for the same clustering objective function. Unlike existing methods, our GNN takes both the pair-wise affinities between local image features and the raw features as input. This direct connection between the raw features and the clustering objective enables us to implicitly perform classification of the clusters between different graphs, resulting in part semantic segmentation without the need for additional post-processing steps.
+      We demonstrate how classical clustering objectives can be formulated as self-supervised loss functions for training an image segmentation GNN. Furthermore, we employ the Correlation-Clustering (CC) objective to perform clustering without defining the number of clusters, allowing for k-less clustering.
       We apply the proposed method for object localization, segmentation, and semantic part segmentation tasks, surpassing state-of-the-art performance on multiple benchmarks.
     </p>
 
