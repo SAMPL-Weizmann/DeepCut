@@ -125,7 +125,7 @@ def GNN_seg(mode, cut, alpha, epoch, K, pretrained_weights, in_dir, out_dir, sav
         # extracting foreground sub-graph
         sec_index = np.nonzero(S).squeeze(1)
         F_2 = F[sec_index]
-        W = util.create_adj(F_2, cut, alpha)
+        W_2 = util.create_adj(F_2, cut, alpha)
 
         # Data to pytorch_geometric format
         node_feats, edge_index, edge_weight = util.load_data(W_2, F_2)
@@ -161,7 +161,7 @@ def GNN_seg(mode, cut, alpha, epoch, K, pretrained_weights, in_dir, out_dir, sav
         # extracting background sub-graph
         sec_index = np.nonzero(S == 0).squeeze(1)
         F_3 = F[sec_index]
-        W = util.create_adj(F_3, cut, alpha)
+        W_3 = util.create_adj(F_3, cut, alpha)
 
         # Data to pytorch_geometric format
         node_feats, edge_index, edge_weight = util.load_data(W_3, F_3)
